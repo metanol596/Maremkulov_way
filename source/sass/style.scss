@@ -1,0 +1,31 @@
+// Variables
+
+@import "variables.scss";
+
+// Global
+
+@import "global/utils.scss";
+@import "global/fonts.scss";
+
+// Blocks
+
+@import "blocks/contacts.scss";
+@import "blocks/feedback-form-section.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/feedback.scss";
+@import "blocks/for-companies.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/modal-form.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/places-list.scss";
+@import "blocks/places.scss";
+@import "blocks/prices.scss";
+@import "blocks/promo.scss";
+@import "blocks/review.scss";
+@import "blocks/tabs.scss";
+@import "blocks/tariff-features.scss";
+@import "blocks/tariffs.scss";
+@import "blocks/travel-features.scss";

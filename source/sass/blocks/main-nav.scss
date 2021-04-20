@@ -1,0 +1,70 @@
+.main-nav {
+  @media (max-width: $desktop-width - 1) {
+    position: absolute;
+    flex-direction: column;
+    padding: 134px 0 254px;
+    left: -304px;
+    width: 320px;
+    height: 568px;
+    background-color: white;
+    top: -29px;
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: -299px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.main-nav--closed {
+  @media (max-width: $desktop-width - 1) {
+    display: none;
+  }
+}
+
+.main-nav--opened {
+  @media (max-width: $desktop-width - 1) {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  @media (max-width: $desktop-width - 1) {
+    background-color: $feedback-form-section-b-extra;
+
+    padding: 17px 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.main-nav__text {
+  @media (max-width: $desktop-width - 1) {
+    color: $extra-black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $base-accent-color;
+    }
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $base-text-color;
+
+    margin-right: 40px;
+  }
+}
+
+.main-nav__text--prices {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}

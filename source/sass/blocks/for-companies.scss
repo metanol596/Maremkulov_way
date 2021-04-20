@@ -1,0 +1,37 @@
+.for-companies {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+
+.for-companies__header {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    text-align: center;
+  }
+}
+
+.for-companies__text {
+  color: rgba($base-text-color, 0.5);
+  font-size: 14px;
+  line-height: 170%;
+
+  width: 320px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 295px;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    text-align: center;
+
+    width: 100%;
+  }
+}

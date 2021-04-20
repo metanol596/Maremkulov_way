@@ -1,0 +1,159 @@
+.review {
+  background-color: $white;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    width: 268px;
+    left: 25px;
+    top: 50px;
+    padding: 32px 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    position: absolute;
+    top: 80px;
+    left: 193px;
+    width: 384px;
+    padding: 30px 29px 41px 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: min-content;
+    padding: 30px 30px 36px;
+    position: absolute;
+  }
+}
+
+.review__header {
+  color: $extra-text-color;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 68px;
+    height: 0.73px;
+    position: absolute;
+
+    background-color: $base-accent-color;
+
+    @media (max-width: $mobile-width-only) {
+      left: 80px;
+      top: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      bottom: -10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: 45px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.review__text {
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba($extra-text-color, 0.7);
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-bottom: 39px;
+    width: 322px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 334px;
+    margin-bottom: 43px;
+  }
+}
+
+.review__author {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $extra-text-color;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 37px;
+    height: 38px;
+    position: absolute;
+
+    background-size: 37px 38px;
+    background-image: url("./../img/avatar-1.png");
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-width-only) {
+      left: 94px;
+      top: -48px;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: -11px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 53px;
+  }
+}
+
+.review__author--vlada {
+  &::before {
+    background-image: url("./../img/avatar-1.png");
+  }
+}
+
+.review__author--marina {
+  &::before {
+    background-image: url("./../img/avatar-2.png");
+  }
+}
+
+.review__author--mikhail {
+  &::before {
+    background-image: url("./../img/avatar-3.png");
+  }
+}
+
+.review__author--anastacia {
+  &::before {
+    background-image: url("./../img/avatar-4.png");
+  }
+}
+
+.review__author--vladimir {
+  &::before {
+    background-image: url("./../img/avatar-5.png");
+  }
+}

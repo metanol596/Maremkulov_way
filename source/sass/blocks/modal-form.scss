@@ -1,0 +1,127 @@
+.modal-form {
+  position: fixed;
+  margin: auto;
+  z-index: 5;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  @media (min-width: 320px) and (max-width: $desktop-width - 1) {
+    width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/modal-form-b.png");
+    background-repeat: no-repeat;
+
+    width: 728px;
+  }
+}
+
+.modal-form--opened {
+  display: block;
+}
+
+.modal-form__form {
+  background-color: $white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: 320px) and (max-width: $desktop-width - 1) {
+    padding: 100px 0 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $feedback-form-section-b-extra;
+
+    width: 390px;
+    padding: 72px 0 89px;
+    margin-left: auto;
+  }
+}
+
+.modal-form__header {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  color: $extra-black;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.modal-form__inputs-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form__input,
+.modal-form__input::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: $extra-black;
+}
+
+.modal-form__input {
+  padding: 15px;
+  border: 1px solid $light-grey;
+  margin-bottom: 20px;
+
+  @media (min-width: 320px) and (max-width: $desktop-width - 1) {
+    width: 288px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+  }
+}
+
+.modal-form__submit-button {
+  color: $white;
+
+  border: none;
+  padding: 18px 40px;
+
+  background-color: $base-accent-color;
+
+  @media (min-width: 320px) and (max-width: $desktop-width - 1) {
+    width: 288px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 176px;
+  }
+}
+
+.modal-form__close-button {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  border: none;
+
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+
+    background-color: $extra-light-grey;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

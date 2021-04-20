@@ -1,0 +1,184 @@
+.tariffs {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: grid;
+    grid-template-columns: repeat(2, 288px);
+    justify-content: center;
+    column-gap: 50px;
+  }
+}
+
+.tariffs__item {
+  border: 1px solid rgba($base-text-color, 0.3);
+  border-radius: 6px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 248px;
+    height: 1px;
+    position: absolute;
+
+    background-color: rgba($extra-text-color, 0.3);
+
+    @media (max-width: $mobile-width-only) {
+      top: 199px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 205px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 29px 27px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 288px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    padding: 30px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 28px 28px 30px;
+  }
+}
+
+.tariffs__item--complex {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 27px;
+  }
+}
+
+.tariffs__header-wrap {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
+.tariffs__header,
+.tariffs__price-text {
+  font-weight: 600;
+  line-height: 38px;
+  color: rgba($base-text-color, 0.7);
+  letter-spacing: -1.3px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $desktop-width - 1) {
+    font-size: 24px;
+  }
+}
+
+.tariffs__header {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-bottom: 5px;
+  }
+}
+
+.tariffs__price-text {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    letter-spacing: normal;
+  }
+}
+
+.tariffs__header.active {
+  letter-spacing: normal;
+}
+
+.tariffs__lead {
+  font-size: 16px;
+  line-height: 24px;
+  color: $extra-text-color;
+
+  @media (max-width: $desktop-width - 1) {
+    text-align: center;
+
+    width: 220px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+    margin-bottom: 59px;
+  }
+}
+
+.tariffs__tariff-button {
+  background-color: $base-accent-color;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $white;
+
+  cursor: pointer;
+
+  @media (max-width: $mobile-width-only) {
+    display: inline-flex;
+    padding: 20px 69px;
+    width: 123%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  @media (max-width: $desktop-width - 1) {
+    &:active {
+      background-color: $hover-accent-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: 116%;
+    padding: 19px 69px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+
+    display: inline-flex;
+    padding: 30px 69px;
+
+    &:hover {
+      background-color: $hover-accent-color;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  @media (max-width: $desktop-width - 1) {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

@@ -1,0 +1,107 @@
+.contacts__header {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+  }
+}
+
+.contacts__inner-wrap {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__email {
+  color: $black;
+  font-size: 14px;
+  line-height: 17px;
+
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 42px;
+    margin-bottom: 22px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 56px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &:hover {
+      color: $hover-accent-color;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.contacts__tel {
+  color: $black;
+  font-size: 16px;
+  line-height: 32px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-left: 42px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 56px;
+    position: relative;
+
+    &:hover {
+      color: $hover-accent-color;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.contacts__tel-icon {
+  fill: $white;
+  stroke: $light-grey;
+}
+
+.contacts__email,
+.contacts__tel {
+  @media (min-width: $desktop-width) {
+    padding-left: 43px;
+  }
+}
+
+.contacts__email-icon-wrap,
+.contacts__tel-icon-wrap {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.contacts__tel-icon-wrap {
+  @media (min-width: $desktop-width) {
+    left: 7px;
+  }
+}
+
+.contacts__email:hover .contacts__email-icon,
+.contacts__tel:hover .contacts__tel-icon {
+  stroke: $hover-accent-color;
+}

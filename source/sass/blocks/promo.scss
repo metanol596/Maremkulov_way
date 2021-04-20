@@ -1,0 +1,160 @@
+.promo {
+  color: $white;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/promo-b-tablet.jpg");
+    background-color: $promo-b-color;
+
+    padding: 60px 0 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/promo-b-desktop.jpg");
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 185px 0 293px;
+  }
+}
+
+.promo__container {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-right: 57px;
+  }
+}
+
+.promo__header {
+  font-weight: 600;
+  line-height: 150%;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    text-align: center;
+
+    background-image: url("../img/promo-b-mobile.jpg");
+    background-repeat: no-repeat;
+    background-color: $promo-b-color;
+    background-size: cover;
+
+    padding: 81px 13px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 80px;
+    text-align: left;
+
+    width: 412px;
+    margin-bottom: 30px;
+  }
+}
+
+.promo__intro {
+  font-size: 16px;
+  line-height: 170%;
+
+  @media (max-width: $mobile-width-only) {
+    color: $extra-text-color;
+    text-align: center;
+
+    padding: 0 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+    width: 417px;
+
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 376px;
+    margin-bottom: 34px;
+
+    text-align: left;
+  }
+}
+
+.promo__button {
+  background-color: $base-accent-color;
+
+  color: $white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    font-weight: bold;
+
+    padding: 18px 40px 16px;
+    width: 288px;
+  }
+
+  @media (max-width: $desktop-width - 1) {
+    &:active {
+      background-color: $hover-accent-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+
+    padding: 19px 40px;
+    width: 250px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+
+    width: 340px;
+    padding: 30px 40px;
+
+    &:hover {
+      background-color: $hover-accent-color;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+.promo__button-icon {
+  fill: $white;
+}

@@ -1,0 +1,79 @@
+.tariff-features {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+}
+
+.tariff-features--complex {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.tariff-features__item {
+  font-size: 16px;
+  line-height: 32px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    width: 235px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 29px;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    margin-bottom: 15px;
+  }
+}
+
+.tariff-features__item--complex {
+
+  background-image: url("./../img/icons/bullit-black.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 10px;
+
+  @media (max-width: $mobile-width-only) {
+    background-position: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.tariff-features__item--econom {
+  background-image: url("./../img/icons/bullit-orange.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width-only) {
+    background-position: 0 10px;
+
+    margin-bottom: 9px;
+  }
+}
+
+.tariff-features--econom {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-bottom: 24px;
+  }
+}
